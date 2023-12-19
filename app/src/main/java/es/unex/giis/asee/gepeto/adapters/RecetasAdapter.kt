@@ -29,9 +29,6 @@ class RecetasAdapter(
                 recetaNombre.text = receta.nombre
                 recetaIngredientes.text = receta.getIngredientesPreview()
 
-                //parsea la imagen a int
-
-                //recetaImg.setImageResource(receta.imagen)
                 context?.let {
                     Glide.with(context)
                         .load(receta.imagenPath)
