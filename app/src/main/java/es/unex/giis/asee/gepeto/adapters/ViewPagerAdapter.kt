@@ -6,7 +6,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.navigation.fragment.findNavController
 import es.unex.giis.asee.gepeto.view.home.recetas.FavoritasFragment
-import es.unex.giis.asee.gepeto.view.home.recetas.RecetasFragment
 import es.unex.giis.asee.gepeto.R
 import es.unex.giis.asee.gepeto.view.home.recetas.HistorialFragment
 
