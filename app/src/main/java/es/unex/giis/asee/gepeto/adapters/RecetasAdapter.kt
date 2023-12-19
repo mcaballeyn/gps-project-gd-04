@@ -1,6 +1,5 @@
 package es.unex.giis.asee.gepeto.adapters
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import com.bumptech.glide.Glide
 import es.unex.giis.asee.gepeto.R
 import es.unex.giis.asee.gepeto.databinding.RecetaItemListBinding
 import es.unex.giis.asee.gepeto.model.Receta
-import java.util.TreeSet
 
 class RecetasAdapter(
     private var recetas: List<Receta>,
@@ -29,9 +27,6 @@ class RecetasAdapter(
                 recetaNombre.text = receta.nombre
                 recetaIngredientes.text = receta.getIngredientesPreview()
 
-                //parsea la imagen a int
-
-                //recetaImg.setImageResource(receta.imagen)
                 context?.let {
                     Glide.with(context)
                         .load(receta.imagenPath)
