@@ -9,7 +9,6 @@ import com.bumptech.glide.Glide
 import es.unex.giis.asee.gepeto.R
 import es.unex.giis.asee.gepeto.databinding.RecetaItemListBinding
 import es.unex.giis.asee.gepeto.model.Receta
-import java.util.TreeSet
 
 class RecetasAdapter(
     private var recetas: List<Receta>,
