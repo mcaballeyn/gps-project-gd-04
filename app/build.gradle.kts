@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs.kotlin")
     id("com.google.devtools.ksp")
+    id("org.sonarqube") version "4.4.1.3373"
 }
 
 android {
@@ -40,6 +41,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+}
+
+sonar {
+  properties {
+    property("sonar.projectKey", "mcaballeyn_gps-project-gd-04")
+    property("sonar.organization", "mcaballeyn")
+    property("sonar.host.url", "https://sonarcloud.io")
+  }
 }
 
 dependencies {
